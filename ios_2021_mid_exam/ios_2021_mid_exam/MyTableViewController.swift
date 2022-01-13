@@ -46,7 +46,6 @@ extension MyTableViewController: UITableViewDataSource {
         event.selectedEvent = selected!
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            // Segue to the second view controller
         selected = DataBase.month.events[indexPath.row]
             self.performSegue(withIdentifier: "EventDetail", sender: self)
         }
